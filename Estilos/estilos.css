@@ -1,0 +1,712 @@
+body {
+	background: url(../Imagenes/fondo.jpg) center;
+}
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+audio {
+    width: 55%;
+    display: block;
+    margin: auto;
+}
+
+
+h2 {
+    color: rgb(229.5, 25.5, 28.9);
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 0 3px 0 rgb(222.42, 244.8, 61.2);
+	
+}
+ul.menu,
+ul.menu ul,
+ul.menu li,
+ul.menu a {
+    margin: 4.5;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+ 
+ul.menu {
+	
+    height: 50px;
+    width: 45%;
+	alignment-adjust:middle;
+ 
+    background: rgb(0, 152.8, 204);
+    background: -webkit-linear-gradient(top, rgb(255, 51, 51) 0%,#168DC8 100%);
+    background: -moz-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: -o-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: -ms-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+ 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+ 
+ul.menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
+}
+ul.menu li a {
+    display: block;
+    padding: 0 14px;
+    margin: 6px 0;
+    line-height: 36px;
+    text-decoration: none;
+ 
+    border-left: 1px solid rgb(214.28, 242.25, 12.75);
+    border-right: 1px solid rgb(214.28, 242.25, 12.75);
+ 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+ 
+    color: rgb(214.28, 242.25, 12.75);
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+ 
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+ 
+ul.menu li:first-child a { border-left: none; }
+ul.menu li:last-child a{ border-right: none; }
+ 
+ul.menu li:hover > a { color: rgb(0, 0, 139); }
+ul.menu ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+ 
+    opacity: 0;
+    background: rgba(0,0,0,0.67);
+ 
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+ 
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+}
+ 
+ul.menu li:hover > ul { opacity: 1; }
+ 
+ul.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+ 
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+ 
+ul.menu li:hover > ul li {
+    height: 36px;
+    overflow: visible;
+    padding: 0;
+}
+ul.menu ul li a {
+    width: 130px;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 14px;
+ 
+    border: none;
+    border-bottom: 1px solid #0909F3;
+}
+ 
+ul.menu ul li:last-child a { border: none; }
+
+h2 {
+background-color: rgb(216, 24, 24);
+border: 2px solid rgb(29.22, 9.6, 182.4);
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+background-image: -moz-linear-gradient(left, rgb(255, 0, 0), #52D8FF);
+background-image: -ms-linear-gradient(left, rgb(255, 0, 0), #52D8FF);
+background-image: -o-linear-gradient(left, rgb(255, 0, 0), #52D8FF);
+background-image: -webkit-gradient(linear, left top, right top, from(rgb(255, 0, 0)), to(#ffdc52));
+background-image: -webkit-linear-gradient(left, rgb(255, 0, 0), #52D8FF);
+background-image: linear-gradient(left, rgb(255, 0, 0) , #52D8FF);
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+opacity: 0.95;
+-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 95);
+filter: alpha(opacity = 80);
+}
+
+.logoEquipos {
+    margin-top: 30px;
+    width: 80%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoEquipos figure{
+    position: relative;
+    cursor: pointer;
+}
+
+.logoEquipos figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.logo {
+    margin-top: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo figure{
+    position: relative;
+    height: 350px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.logo figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.logo figure .textoLogo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31.046, 10.2, 193.8, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.logo figure:hover > .textoLogo {
+    opacity: 1;
+    visibility: visible;
+    margin-top: .5px;
+    margin-bottom: .5px;
+}
+
+.logo figure:hover > img{
+    transform: scale(1.2);
+}
+
+.logo figure .textoLogo p{
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+}
+
+.himno audio{
+    margin-top: 50px;
+}
+
+#introduccion {
+    color: rgb(255, 215, 0);
+    font-size: 30px;
+    font-family: fantasy;
+    font-weight: 360;
+    text-align: center;
+}
+
+.inicioLigaMx {
+    color: rgb(0, 255, 255);
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: justify-all;
+}
+
+#imagenTrofeo {
+    width: 600px;
+    height: 550px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px, 10px, 25px, rgba (0,0,0,0.5);
+}
+
+#imagenTrofeo img{
+    width: 700px;
+    height: 100%;
+    transition: 1.5s;
+}
+
+#imagenTrofeo img:hover{
+    transform: translateX(-30%);
+    filter: brightness(80%);
+}
+
+.trofeo h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(127, 255, 0);
+    font-weight: 450;
+}
+
+#calendario1 {
+    color: rgb(127, 255, 0);
+    font-weight: 650;
+}
+
+#calendario2 {
+    margin-bottom: 20px;
+    color: rgb(12.75, 242.25, 240.34);
+    font-weight: 350;
+}
+
+#posiciones {
+    color: rgb(220, 20, 60);
+    font-size: 30px;
+}
+
+.posiciones {
+    margin-top: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.posiciones figure {
+    position: relative;
+    height: 620px;
+    width: 620px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.posiciones figure img{
+    width: 100%;
+    height: 100%;
+    transition: transition: all 500ms ease-out;
+}
+
+.posiciones figure .posicionesCapa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(183.6, 20.4, 23.12, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.posiciones figure:hover > .posicionesCapa {
+    opacity: 1;
+    visibility: visible;
+    margin-top: .5px;
+    margin-bottom: .5px;    
+}
+
+.posiciones figure:hover > .posicionesCapa {
+    transform: scale(1.2);
+}
+
+.posiciones figure .posicionesCapa p{
+    color: rgb(127, 255, 0);
+    font-size: 20px;
+    margin-top: 450px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+#porcentual {
+    color: rgb(255, 0, 4.25);
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.tablaPorcentual {
+    margin-top: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablaPorcentual figure {
+    position: relative;
+    height: 800px;
+    width: 680px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tablaPorcentual figure img{
+    width: 100%;
+    height: 100%;
+    transition: transition: all 500ms ease-out;
+}
+
+.tablaPorcentual figure .porcentualCapa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49.194, 173.4, 30.6, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tablaPorcentual figure:hover > .porcentualCapa {
+    opacity: 1;
+    visibility: visible;
+    margin-top: .5px;
+    margin-bottom: .5px;    
+}
+
+.tablaPorcentual figure:hover > .porcentualCapa {
+    transform: scale(1.3);
+}
+
+.tablaPorcentual figure .porcentualCapa p{
+    color: rgb(255, 0, 4.25);
+    font-size: 20px;
+    margin-top: 450px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+#estadísticas {
+    color: rgb(127, 255, 0);
+    font-size: 30px;
+}
+
+#ofensivas {
+    color: rgb(173, 255, 47);
+    font-size: 22px;
+}
+
+#tablaOfensivas {
+    width: 350px;
+    height: 630px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#tablaOfensivas img {
+    width: 100%;
+    height: 700px;
+    transition: 2s;
+}
+
+#tablaOfensivas img:hover{
+    transform: translateY(-30%);
+    filter: brightness(80%);
+}
+
+#defensivas {
+    color: rgb(255, 47, 50.467);
+    font-size: 22px;
+}
+
+#tablaDefensivas {
+    width: 350px;
+    height: 630px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#tablaDefensivas img {
+    width: 100%;
+    height: 700px;
+    transition: 2s;
+}
+
+#tablaDefensivas img:hover{
+    transform: translateY(-30%);
+    filter: brightness(80%);
+}
+
+#estadísticasGen {
+    color: rgb(255, 47, 50.467);
+    font-size: 22px;
+}
+
+#tablaEstaGen {
+    width: 710px;
+    height: 180px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#tablaEstaGen img {
+    width: 800px;
+    height: 100%;
+    transition: 2s;
+}
+
+#tablaEstaGen img:hover {
+    transform: translateX(-30%);
+    filter: brightness(80%);
+}
+
+#partidosTotales {
+    color: rgb(255, 47, 50.467);
+    font-size: 22px;
+}
+
+#tablaPartidos {
+    width: 800px;
+    height: 360px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#tablaPartidos img{
+    width: 100%;
+    height: 410px;
+    transition: 2s;
+}
+
+#tablaPartidos img:hover {
+    transform: translateY(-30%);
+    filter: brightness(80%);
+}
+
+#goleo {
+    color: rgb(255, 47, 50.467);
+    font-size: 22px;
+}
+
+#tablaGoleo {
+    width: 850px;
+    height: 600px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#tablaGoleo img {
+    width: 100%;
+    height: 650px;
+    transition: 2s;
+}
+
+#tablaGoleo img:hover {
+    transform: translateY(-30%);
+    filter: brightness(80%);
+}
+
+#campeonGoleo {
+    color: rgb(0, 204, 49.725);
+    font-size: 22px;
+}
+
+#fairplay {
+    color: rgb(255, 20, 147);
+    font-size: 22px;
+}
+
+#tablaFairplay {
+    width: 600px;
+    height: 550px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#tablaFairplay img{
+    width: 100%;
+    height: 600px;
+    transition: 2s;
+}
+
+#tablaFairplay img:hover {
+    transform: translateY(-30%);
+    filter: brightness(80%);
+}
+
+#vídeos {
+    color: rgb(12.753, 242.25, 240.34);
+    font-size: 22px;
+}
+
+#clásico {
+    color: rgb(12.753, 242.25, 240.34);
+    font-size: 20px;
+}
+
+#debutMzt {
+    color: rgb(12.753, 242.25, 240.34);
+    font-size: 20px;
+}
+
+#golesCabecita {
+    color: rgb(12.753, 242.25, 240.34);
+    font-size: 20px;
+}
+
+#topGoles {
+    color: rgb(240, 230, 140);
+    font-size: 22px;
+}
+
+.redesSociales {
+    margin-top: 60px;
+}
+
+#facebook img {
+    width: 80px;
+    height: 80px;
+}
+
+#twitter {
+    padding-left: 60px;
+}
+
+#twitter img {
+    width: 80px;
+    height: 80px;
+}
+
+#instagram {
+    padding-left: 60px;
+}
+
+#instagram img{
+    width: 80px;
+    height: 80px;
+}
+
+#cuartos {
+    color: rgb(12.753, 242.25, 240.34);
+    font-size: 22px;
+}
+
+#semis {
+    color: rgb(12.753, 242.25, 240.34);
+    font-size: 22px;
+}
+
+.cuartosFinal {
+    margin-top: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuartosFinal figure {
+    position: relative;
+    height: 410px;
+    width: 730px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cuartosFinal figure img{
+    width: 100%;
+    height: 100%;
+    transition: transition: all 500ms ease-out;
+}
+
+.cuartosFinal figure .cuartosFinalCapa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31.046, 10.2, 193.8, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cuartosFinal figure:hover > .cuartosFinalCapa {
+    opacity: 1;
+    visibility: visible;
+    margin-top: .5px;
+    margin-bottom: .5px;    
+}
+
+.cuartosFinal figure:hover > .cuartosFinalCapa {
+    transform: scale(1.2);
+}
+
+.cuartosFinal figure .cuartosFinalCapa p{
+    color: rgb(127, 255, 0);
+    font-size: 20px;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 275px;
+    text-align: center;
+}
+
+.semifinales {
+    margin-top: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.semifinales figure {
+    position: relative;
+    height: 410px;
+    width: 730px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.semifinales figure img{
+    width: 100%;
+    height: 100%;
+    transition: transition: all 500ms ease-out;
+}
+
+.semifinales figure .semifinalesCapa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31.046, 10.2, 193.8, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.semifinales figure:hover > .semifinalesCapa {
+    opacity: 1;
+    visibility: visible;
+    margin-top: .5px;
+    margin-bottom: .5px;    
+}
+
+.semifinales figure:hover > .semifinalesCapa {
+    transform: scale(1.2);
+}
+
+.semifinales figure .semifinalesCapa p{
+    color: rgb(127, 255, 0);
+    font-size: 20px;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 275px;
+    text-align: center;
+}
